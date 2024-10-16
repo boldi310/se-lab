@@ -7,7 +7,7 @@ import java.util.Random;
 *
 * (Deliberately contains bugs.)
 */
-public class TorpedoStore {
+public class TorpedoStore { //Torpedó tároló
 
   private Random generator = new Random();
 
@@ -30,7 +30,7 @@ public class TorpedoStore {
     }
   }
 
-  public boolean fire(int numberOfTorpedos){
+  public boolean fire(int numberOfTorpedos){ // this function returns with a true or false value
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
       throw new IllegalArgumentException("numberOfTorpedos");
     }
